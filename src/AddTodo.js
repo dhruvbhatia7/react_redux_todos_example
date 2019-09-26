@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { addTodo } from './redux/actions';
+import { connect } from 'react-redux';
 
 
 class AddTodo extends Component {
@@ -41,4 +43,8 @@ class AddTodo extends Component {
     }
 }
 
-export default AddTodo;
+
+export default connect(
+    null,
+    ({ addTodo })
+)(AddTodo);
