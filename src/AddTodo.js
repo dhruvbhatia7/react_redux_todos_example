@@ -28,11 +28,11 @@ class AddTodo extends Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>
-                    Id:
+                    Id:&emsp;&emsp;&emsp;&emsp;
                     <input type="text" name="id" onChange={this.handleChange} /><br></br><br></br>
                 </label>
                 <label>
-                    Content: 
+                    Content:&emsp;&nbsp;
                     <input type="text" name="content" onChange={this.handleChange} /><br></br><br></br>
                 </label>
                 <input type="submit" value="Add Todo"/><br></br><br></br><br></br>
